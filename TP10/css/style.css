@@ -1,0 +1,88 @@
+/*
+greyD  #212529
+grey   #272b2f
+greyL  #2a2e32
+orange #d84e4b
+saumon #eb8872
+*/
+/*
+* {
+  outline: 1px solid springgreen;
+}
+*/
+body {
+  margin: 0;
+  background-color: #212529;
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+}
+
+h2 {
+  margin: 0;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar div {
+  background-color: #2a2e32;
+  border-radius: 8px;
+  text-align: center;
+  width: 80%;
+  margin: 10px auto;
+  padding: 0.5em;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  padding: 20px 40px;
+}
+
+.banner {
+  height: 320px;
+  overflow: hidden;
+  border-top: 4px solid #272b2f;
+  border-bottom: 4px solid #272b2f;
+}
+
+section > div {
+  padding: 1em;
+  border-radius: 8px;
+  background-color: #2a2e32;
+}
+
+aside > div {
+  padding: 1em;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color: #272b2f;
+}
+
+footer {
+  width: 100%;
+  background-color: #272b2f;
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .navbar {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+  }
+}

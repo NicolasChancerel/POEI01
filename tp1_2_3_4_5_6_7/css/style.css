@@ -1,0 +1,89 @@
+html {
+  color: #ffffff;
+  background-color: #082032;
+  font-family: Verdana, sans-serif;
+}
+
+.formulaireSignUp {
+  border: 1px solid #ffffff8a;
+  padding: 10px;
+  width: 400px;
+}
+.formulaireSignUp > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formulaireSignUp > div > input[type="submit"] {
+  margin-left: auto;
+}
+
+.formulaireSignUp > div input:nth-child(1),
+.formulaireSignUp > div .input:nth-child(1) {
+  margin-right: 5px;
+}
+
+.formulaireSignUp > div input:nth-child(2),
+.formulaireSignUp > div .input:nth-child(2) {
+  margin-left: 5px;
+}
+
+.formulaireSignUp > div input:only-child,
+.formulaireSignUp > div .input:only-child {
+  margin-right: 0;
+}
+
+.formulaireSignUp Label {
+  margin: auto 8px;
+}
+
+.formulaireSignUp .genreRadio {
+  display: block;
+}
+
+input::placeholder {
+  color: #ffffff71;
+}
+
+input[type="submit"] {
+  color: #ffffff;
+  background-color: #ffffff31;
+  padding: 0.7em;
+  margin: 8px 0;
+  border: 1px solid #ffffff;
+}
+
+input,
+select {
+  color: #ffffff;
+  background-color: #ffffff25;
+  padding: 0.5em;
+  margin: 10px 0;
+  border: 1px solid #ffffff8a;
+  flex-grow: 1;
+}
+
+input,
+select,
+label {
+  font-size: 12px;
+}
+
+a {
+  color: #a6f5ff;
+}
+
+/* Default Table Style */
+table {
+  border: 1px solid grey;
+  font-size: 12pt;
+  border-collapse: collapse;
+  margin: 4px;
+}
+table td {
+  padding: 0.5em;
+  border: 1px solid lightgrey;
+}
+table thead td {
+  background: rgba(255, 255, 255, 0.1);
+}

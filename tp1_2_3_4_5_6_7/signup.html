@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/university.png" type="image/icon type" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>University Signup</title>
+  </head>
+  <body>
+    <h1>Formulaire d'enregistrement</h1>
+    <form action="" class="formulaireSignUp">
+      <!--
+        Nom, prenom
+        Lieu et Date de naissance
+        Pays d’origine
+        Civilité
+        Pourcentage ou moyenne obtenu en BAC
+        Formation
+        D’autres choix de formation possible
+        Adresse email
+        Numéro de téléphone
+        Lettre de motivation
+        -->
+      <div>
+        <input type="text" name="Nom" placeholder="Nom" />
+        <input type="text" name="Prenom" placeholder="Prenom" />
+      </div>
+      <div>
+        <input
+          class="input"
+          name="LieuNaissance"
+          type="text"
+          placeholder="Lieu de Naissance"
+        />
+        <select class="input" name="paysOrigine" id="paysOrigine">
+          <option value="placeholder">Choisir un pays d'origine</option>
+          <option value="fr">france</option>
+          <option value="ezern">Allemagne</option>
+          <option value="ezereren">Suisse</option>
+          <option value="eeerzzn">Belgique</option>
+          <option value="egsdfhn">Angleterre</option>
+          <option value="bsdghsjklabla">Espagne</option>
+        </select>
+      </div>
+      <hr />
+      <div>
+        <label for="DateNaissance">Date de naissance :</label>
+        <input type="date" name="DateNaissance" id="" />
+      </div>
+      <hr />
+      <div class="genreRadio">
+        <div>
+          <input type="radio" name="civilite" value="mr" id="mr" />
+          <label for="mr">Monsieur</label>
+        </div>
+        <div>
+          <input type="radio" name="civilite" value="ms" id="ms" />
+          <label for="ms">Madame</label>
+        </div>
+        <div>
+          <input type="radio" name="civilite" value="idk" id="idk" />
+          <label for="idk">Autre</label>
+        </div>
+      </div>
+      <hr />
+      <div>
+        <input type="text" name="Moyenne" placeholder="Moyenne obtenu en BAC" />
+      </div>
+      <div>
+        <label for="formatio">Formation :</label>
+        <select name="formationlist" id="formation">
+          <option value="dev">dev</option>
+          <option value="science">science</option>
+          <option value="math">math</option>
+          <option value="blabla">blabla</option>
+        </select>
+      </div>
+      <div>
+        <input
+          type="text"
+          name="autreFormation"
+          placeholder="Autre formation . . ."
+        />
+      </div>
+      <hr />
+      <div>
+        <input type="email" name="email" placeholder="E-mail" />
+        <input
+          type="tel"
+          name="numeroTelephone"
+          placeholder="Numéro telephone"
+        />
+      </div>
+      <hr />
+      <div>
+        <input type="file" name="ficher" accept=".pdf" id="fichier" />
+      </div>
+      <div>
+        <input type="submit" value="Valider le formulaire" />
+      </div>
+    </form>
+  </body>
+</html>
